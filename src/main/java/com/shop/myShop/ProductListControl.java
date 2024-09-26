@@ -18,7 +18,7 @@ public class ProductListControl {
     }
 
 
-    @GetMapping("/add/{name}/{price}/{description}/{discount}")
+    @PostMapping("/add/{name}/{price}/{description}/{discount}")
     public Product addProduct(@PathVariable String name, @PathVariable int price, @PathVariable String description, @PathVariable int discount) {
         Product product = new Product(name, price, description, discount);
         productList.add(product);
