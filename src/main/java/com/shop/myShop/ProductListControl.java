@@ -24,4 +24,11 @@ public class ProductListControl {
         productList.add(product);
         return product;
     }
+    @GetMapping("/smile")
+    public String showSmile() {
+        String smile = "(=^-^=)";
+        return smile;
+    }
+
+
 }
